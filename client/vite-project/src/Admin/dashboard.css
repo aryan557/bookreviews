@@ -1,0 +1,129 @@
+/* Dashboard.css */
+
+/* Main container for the dashboard */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title styling */
+  .dashboard-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .add-book-button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-book-button:hover {
+    background-color: #218838;
+  }
+  
+  .add-book-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    margin: 20px 0;
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 300px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  /* Filter Dropdown */
+  .filter-container {
+    margin: 20px 0;
+  }
+  
+  .filter-select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Books container with flex layout */
+  .books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the items */
+  }
+  
+  /* Book card style */
+  .book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 220px; /* Fixed width to look like table cells */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .book-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .book-image {
+    width: 150px; /* Image width */
+    height: 200px; /* Image height */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .book-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .book-author,
+  .book-year {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  /* Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .books-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .book-card {
+      width: 80%; /* Adjust card width on smaller screens */
+    }
+  }
+  

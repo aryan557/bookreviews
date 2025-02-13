@@ -1,0 +1,82 @@
+/* BookDetail.css */
+
+/* Reviews Container with scroll */
+.reviews-container {
+    max-height: 300px;
+    overflow-y: auto; /* Scrollbar if content exceeds */
+    margin-bottom: 20px;
+}
+
+/* Review Card */
+.review-card {
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Read More Button */
+.read-more-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.read-more-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.read-more-btn:active {
+    background-color: #1e40af;
+}
+
+/* Review Form */
+.review-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333;
+    resize: vertical;
+}
+
+.review-form button {
+    background-color: #2563eb;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-form button:hover {
+    background-color: #1d4ed8;
+}
+
+.review-form button:active {
+    background-color: #1e40af;
+}
+.book-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 300px; /* Set a max width for the image */
+    height: auto; /* Keep the aspect ratio intact */
+    margin-bottom: 20px;
+}

@@ -1,0 +1,76 @@
+/* Login.css */
+.login-container {
+    background-color: #111827; /* Dark background */
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .login-box {
+    background-color: #1f2937; /* Dark gray box */
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .login-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #374151;
+    background-color: #1f2937;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .login-input:focus {
+    border-color: #4f46e5;
+    outline: none;
+  }
+  
+  .login-button {
+    width: 100%;
+    background-color: #10b981;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .login-button:hover {
+    background-color: #059669;
+  }
+  
+  .login-footer {
+    margin-top: 15px;
+    color: white;
+  }
+  
+  .login-footer a {
+    color: #ef4444;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  
